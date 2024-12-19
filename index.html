@@ -16,32 +16,43 @@
 </head>
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
-                <div class="d-flex justify-content-start align-items-center">
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/duck.png" alt="Logo" width="50px">
-                    </a>
-        
-                    <a href="" class="text-decoration-none link-light p-2 d-none d-lg-block">Catalogo Libri</a>
-                    <a href="" class="text-decoration-none text-secondary-emphasis p-2 d-none d-lg-block">Anagrafica Utenti</a>
-                    <a href="" class="text-decoration-none text-secondary-emphasis p-2 d-none d-lg-block">Storico Prestiti</a>
-                    <a href="" class="text-decoration-none text-secondary-emphasis p-2 d-none d-lg-block">Help</a>
-                </div>
-    
-                <div class="d-flex justify-content-end align-items-center d-none d-lg-block">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/duck.png" alt="Logo" width="50px">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica Utenti</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
+
                     <form class="d-flex" role="search">
-                      <input class="form-control me-2 text-start bg-light text-secondary" type="search" placeholder="Cerca..." aria-label="Search">
-                      <button class="btn btn-outline-light" type="submit">Cerca</button>
+                        <input class="form-control me-2 bg-light text-secondary" type="search" placeholder="Cerca..." aria-label="Search">
+
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
                     </form>
                 </div>
-
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>              
-    
             </div>
-          </nav>
+        </nav>
     </header>
 
     <main class="container d-lg-flex flex-nowrap">
