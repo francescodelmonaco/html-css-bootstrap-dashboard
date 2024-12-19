@@ -56,7 +56,36 @@
     </header>
 
     <main>
-        
+        <form class="container mt-3">
+            <h1>Nuovo Libro</h1>
+
+            <div class="d-flex justify-content-between row">
+                <div class="mb-3 col-6">
+                    <label for="exampleInputName1" class="form-label">Nome Autore</label>
+                    <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Inserisci il nome dell'autore">
+                </div>
+
+                <div class="mb-3 col-6">
+                    <label for="exampleInputNameSurname1" class="form-label">Cognome Autore</label>
+                    <input type="surname" class="form-control" id="exampleInputSurname1" aria-describedby="nameHelp" placeholder="Inserisci il cognome dell'autore">
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="exampleInputTitle1" class="form-label">Titolo</label>
+                <input type="title" class="form-control" id="exampleInputTitle1" aria-describedby="nameHelp" placeholder="Inserisci il titolo del libro">
+                <div id="titleHelpBlock" class="form-text">
+                    Titolo versione italiana
+                  </div>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Disponibile anche in digitale</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+          </form>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
